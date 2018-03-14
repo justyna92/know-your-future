@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Know your future</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}" href="../../css/main.css" />
+    
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" th:href="@{/}">Know your future</a>
+            <a class="navbar-brand" th:href="@{/technologies}">Technologies</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="min-height: 500px">
+    <div class="starter-template">
+    
+	    <div>
+	        <button th:each="sunsign : ${sunsigns}" th:value="${sunsign}" type="button" class="button btn-sunsign sunsign">
+	        	<span th:text="${sunsign}"></span>
+	        </button>
+	   	</div>
+   		<div class="stop_float_left">
+	   		<button type="button" value="yesterday" class="button btn-day day">
+		    	<span>yesterday</span>
+		    </button>
+		    <button type="button" value="today" class="button btn-day day">
+		    	<span>today</span>
+		    </button>
+		    <button type="button" value="tomorrow" class="button btn-day day">
+		    	<span>tomorrow</span>
+		    </button>
+   		</div>
+   		<div class="stop_float_left">
+   			<button id="show_horoscope" type="submit" class="button btn-horoscope">
+		    	<span>horoscope</span>
+		    </button>
+   		</div>
+	   	<div id="horoscope_description" class="stop_float_left horoscope_space">
+	   		<p class="welcome_text">Choose your zodiac sign, a day and check what the stars talk about you!</p>
+	   	</div>
+   		<div id="json_response" class="disp_none link_space">
+	   		<a id="json_response_btn" class="link">
+		    	<span>JSON Response: show</span>
+		    </a>
+	   	</div>
+   		<div id="feedback" class="disp_none">
+   		
+   		</div>
+   		
+    </div>
+</div>
+
+<div class="container">
+    <footer>
+        <p class="footer_prop">
+            November 2017
+        </p>
+    </footer>
+</div>
+
+<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

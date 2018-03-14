@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Coustard');
+
+body{
+	font-family: "Coustard";
+	font-size: 18px;
+	background-color: #ffe6ff;
+}
+
+.button {
+	margin: 10px 10px 10px 10px; 
+  	float:left;
+	height: 50px;
+  	width: 120px;
+  	color: white;
+  	border-radius: 6px;
+  	font-weight: 500;
+  	font-size: inherit;	
+}
+
+.btn-sunsign {
+	background-color: #cc0099;
+}
+
+.btn-sunsign:hover , .btn-sunsign-focus{
+	box-shadow: 1px 1px 10px 3px blue,-1px -1px 10px 3px red;
+}
+
+.btn-day {
+	background-color: #3366ff;
+}
+
+.btn-day:hover , .btn-day-focus {
+	box-shadow: 1px 1px 10px 3px #0033cc,-1px -1px 10px 3px #6600cc;
+}
+
+.btn-horoscope {
+	background-color: #ff0000;
+}
+
+.btn-horoscope:hover , .btn-horoscope:focus {
+	box-shadow: 1px 1px 10px 3px red,-1px -1px 10px 3px #990000;
+}
+
+.stop_float_left {
+	clear: both;
+}
+
+.horoscope_space {
+	border-style: dotted; 
+	padding: 10px 10px 10px 10px; 
+}
+
+.description_justify {
+	text-align: justify; 
+}
+
+.welcome_text {
+	text-align:center; 
+	font-size: 1.5em; 
+	color: blue;
+}
+
+.disp_none {
+	display: none;
+}
+
+.link_space {
+	padding: 10px 10px 10px 10px;
+}
+
+.link {
+	font-size: 1.2em; cursor: pointer; 
+}
+
+.footer_prop {
+	text-align: center;
+}
+
+.technologiesList{
+	text-align: center;
+	font-size: 1.5em;
+	padding-right: 20px;
+    padding-left: 20px;
+}
+p.title{
+	color:#0000FF;
+	text-align: center;
+	font-size: 2em;
+}
+
+ul.technologiesList {
+	list-style: none;
+}
+
+h1.error {
+	color: red;
+}
+
+h3.error {
+	color: blue;
+}
